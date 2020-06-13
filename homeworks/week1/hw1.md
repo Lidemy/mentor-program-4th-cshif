@@ -1,6 +1,17 @@
-## 交作業流程
+# hw1：交作業流程
 
 （這裡的 remote 代表 GitHub 端）
+
+## Instructions
+
+請用文字一步步敘述應該如何交作業。
+
+範例：
+
+新開一個 branch：`git branch hw1`
+切換到 branch：`git checkout hw1`
+
+---
 
 ### 寫作業的前置作業
 0. 複製一份 repository 到 local 端 `$ git clone git@github.com:Lidemy/mentor-program-4th-cshif.git`
