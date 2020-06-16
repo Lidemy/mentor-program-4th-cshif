@@ -32,6 +32,6 @@
 
 ### 交作業流程 (3) 助教看完了
 11. PR 頁面顯示 "Merged" 時代表助教已經批改好作業（他同時也會刪掉 remote 的 week1_hw 分支），你可以把 remote 的 master 抓下來和 local 的 master 同步了
-12. `$ git pull origin master` 把 remote 的 master 抓下來到 local (本機)
+12. (`$ git checkout master`) `$ git pull origin master` 把 remote 的 master 抓下來到 local (本機)
 13. `$ git branch -d week1_hw` 刪掉 local 的 week1_hw 分支
 14. 交作業流程全部完成。
