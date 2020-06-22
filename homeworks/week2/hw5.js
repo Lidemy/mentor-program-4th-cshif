@@ -5,11 +5,11 @@
 // repeat 的話就是回傳重複 n 次之後的字串。
 
 function join(arr, concatStr) {
-  
+	//
 }
 
 function repeat(str, times) {
-  
+	//
 }
 
 console.log(join(['a'], '!'));

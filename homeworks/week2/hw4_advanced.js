@@ -30,6 +30,7 @@ function printFactor(factorArr, num) {
 	return;
 }
 
+judgeFactor(1);
 judgeFactor(3);
 judgeFactor(7);
 judgeFactor(41);
