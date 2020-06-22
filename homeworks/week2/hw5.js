@@ -5,12 +5,26 @@
 // repeat 的話就是回傳重複 n 次之後的字串。
 
 function join(arr, concatStr) {
-	//
+	let str = arr[0];
+	for(let i = 1; i < arr.length; i++){
+		str = str + concatStr + arr[i];
+	}
+	return str;
 }
+
+console.log(join(['a'], '!')); // a
+console.log(join([1, 2, 3], '')); // 123
+console.log(join(['a', 'b', 'c'], '!')); // a!b!c
+console.log(join(['a', 1, 'b', 2, 'c', 3], ',')); //a,1,b,2,c,3
 
 function repeat(str, times) {
-	//
+	let output = '';
+	for(let i = 1; i <= times; i++){
+		output = output + str;
+	}
+	return output;
 }
 
-console.log(join(['a'], '!'));
-console.log(repeat('a', 5));
+console.log(repeat('a', 5)); // aaaaa
+console.log(repeat('yoyo', 2)); // yoyoyoyo
+console.log(repeat('foxco ', 3)); // foxco foxco foxco
