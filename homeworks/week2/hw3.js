@@ -1,13 +1,8 @@
 // hw3：反轉字串
 // 給定一個字串，請「印出」反轉之後的樣子（不能使用內建的 reverse 函式）
 
-const str = '';
-
-// my thoughts:
-// 把最後一個字母 .push() 到新陣列 strSplitNew，重複 (str.length-1) 遍
-
 /*
-updates: 
+my thoughts:
 0. 分割陣列 strSplit 和新陣列 strArr 分開操作
 1. 把原始字串 str 的第 i 個位置的字母推到新陣列 strArr，重複 (str.length-1) 遍
 2. 去掉分割陣列 strSplit 的第 (str.length-1-i) 位
@@ -16,16 +11,13 @@ updates:
 */
 
 function reverse(str) {
-	let strSplit = str.split(''); // strSplit 是一個陣列
-	let strArr = [];
+	let arr = [];
 	for(let i = 0; i <= str.length-1; i++){
-		strArr.push(str[str.length-1-i]); // .push() add element(s) to the end of array and return the new length
-		strSplit.pop(); // .pop() remove the last and return it
-		// console.log(strArr);
+		arr.push(str[str.length-1-i]); // .push() str 的最後一位到 arr
 	}
-	let strOutput = strArr.join(''); // .join() return a string
-	console.log(strOutput);
-	return strOutput;
+	let output = arr.join(''); // .join() return a string
+	console.log(output);
+	return output;
 }
 
 // function: 接收字串，拆成陣列

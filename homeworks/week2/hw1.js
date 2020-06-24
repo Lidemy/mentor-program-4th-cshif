@@ -5,7 +5,6 @@ function printStars(n) {
 	for (let i = 1; i <= n; i++) {
 		console.log('*');
 	}
-	return;
 }
 
 printStars(5);
