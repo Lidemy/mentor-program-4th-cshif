@@ -5,9 +5,12 @@
 // repeat 的話就是回傳重複 n 次之後的字串。
 
 function join(arr, concatStr) {
+	if (arr.length === 0) {
+		return '';
+	}
 	let str = arr[0];
 	for(let i = 1; i < arr.length; i++){
-		str = str + concatStr + arr[i];
+		str += concatStr + arr[i];
 	}
 	return str;
 }
