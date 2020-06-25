@@ -6,6 +6,7 @@ LIOJ1020 - 判斷質數
 
 針對每一筆輸入，如果 P 是質數，輸出：Prime，否之則輸出 Composite
 */
+// debugger
 
 // 關於 OJ 的輸入與輸出：JavaScript 的話則是使用 `readline.createInterface`，就可以從 `stdin` 讀取輸入。輸出的部份直接用 `console.log` 即可。
 var readline = require('readline');
@@ -22,18 +23,25 @@ rl.on('line', function (line) {
 
 // 輸入結束，開始針對 num 做處理
 rl.on('close', function() {
-  judgeFactor1(num)
+  judgeFactor(num)
 })
 
 // 上面都不用管，只需要完成這個 function 就好，可以透過 num[i] 拿取內容
-function judgeFactor1(num){
+function judgeFactor(num){
 	let arr = [];
-	for(let i = 1; i <= num; i++){
-		if (num%i === 0) {
-			arr.push(i);
+	// i: <= num[j] 的所有自然數; j: Array num 的第 j 個位置
+	for(j = 0; j <= num.length-1; j++){
+		for(let i = 1; i <= num[j]; i++){
+			if (num[j]%i === 0) {
+				arr.push(i);
+			}
+		}
+		if (arr.length <= 2) {
+			console.log('Prime');
+		} else {
+			console.log('Composite');
 		}
 	}
-	return judgeFactor2(arr);
 }
 
 /*
@@ -41,7 +49,7 @@ function judgeFactor1(num){
 - for loop: 檢查 num 的因數，檢查 1～num 的所有自然數
 - if: 若自然數 i 為 num 的因數，存到 arr
 */
-
+/*
 function judgeFactor2(arr){
 	if (arr.length <= 2) {
 		console.log('Prime');
@@ -49,7 +57,7 @@ function judgeFactor2(arr){
 		console.log('Composite');
 	}
 }
-
+*/
 /*
 - function judgeFactor(): 接收 arr
 - if: arr 的長度，若 arr.length <= 2，num 為質數
