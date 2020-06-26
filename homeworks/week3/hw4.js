@@ -26,11 +26,13 @@ rl.on('close', function() {
 
 // 上面都不用管，只需要完成這個 function 就好，可以透過 lines[i] 拿取內容
 function solve(lines){
-	let arr = lines.split('').reverse().join('');
-	if (arr === lines) {
+	for(let i = 0; i <= lines.length-1; i++){
+		let arr = lines[i].split('').reverse().join('');
+		if (arr === lines[i]) {
 		console.log('True');
-	} else {
+		} else {
 		console.log('False');
+		}
 	}
 }
 

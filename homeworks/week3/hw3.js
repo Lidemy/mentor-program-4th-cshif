@@ -27,16 +27,11 @@ rl.on('close', function() {
 })
 
 // 上面都不用管，只需要完成這個 function 就好，可以透過 num[i] 拿取內容
-function judgeFactor(num){
-	let arr = [];
-	// i: <= num[j] 的所有自然數; j: Array num 的第 j 個位置
-	for(j = 0; j <= num.length-1; j++){
-		for(let i = 1; i <= num[j]; i++){
-			if (num[j]%i === 0) {
-				arr.push(i);
-			}
-		}
-		if (arr.length <= 2) {
+
+function judgeFactor(num) {
+	for(let i = 1; i < num.length; i++){
+		let theNum = Number(num[i]);
+		if (isPrime(theNum)) {
 			console.log('Prime');
 		} else {
 			console.log('Composite');
@@ -44,28 +39,30 @@ function judgeFactor(num){
 	}
 }
 
+function isPrime(theNum) {
+	if (theNum === 1) return false;
+	for(let j = 2; j < theNum; j++){
+		if (theNum%j === 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
 /*
-- function saveFactor(): 接收 num
-- for loop: 檢查 num 的因數，檢查 1～num 的所有自然數
-- if: 若自然數 i 為 num 的因數，存到 arr
-*/
-/*
-function judgeFactor2(arr){
-	if (arr.length <= 2) {
+for(let i = 0; i <= num.length-1; i++){
+	if (judgeFactor(num[i])) {
 		console.log('Prime');
 	} else {
 		console.log('Composite');
 	}
 }
-*/
-/*
-- function judgeFactor(): 接收 arr
-- if: arr 的長度，若 arr.length <= 2，num 為質數
-*/
-/*
-judgeFactor1(1);
-judgeFactor1(32);
-judgeFactor1(41);
-judgeFactor1(37);
-judgeFactor1(99);
+
+function judgeFactor(num){
+	if (num === 1) return false;
+	for(let j = 2; j <= num[i]; j++){
+		if (num[i]%j === 0) return false;
+	}
+	return true;
+}
 */
