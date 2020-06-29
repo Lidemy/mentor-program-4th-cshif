@@ -10,8 +10,35 @@ LIOJ1025 - 水仙花數
 現在給你一個範圍 n 到 m，請你求出這範圍之中的水仙花數有哪些
 */
 
-function narNum(n, m) {
-	//
+var readline = require('readline');
+
+var lines = []
+var rl = readline.createInterface({
+	input: process.stdin
+});
+
+rl.on('line', function (line) {
+	lines.push(line)
+});
+
+rl.on('close', function() {
+	solve(lines)
+})
+
+function solve(lines) {
+	let m = Number(lines[0].split(' ')[1]);
+	for(let num = Number(lines[0].split(' ')[0]); num<=m; num++){
+		let a = num.toString();
+		sum(a, num);
+	}
 }
 
-narNum(1, 1000000);
+function sum(a, num) {
+	let A = 0;
+	for(let j = 0; j < a.length; j++){
+		A += Math.pow(a[j], a.length);
+	}
+	if (A == num) {
+		console.log(num);
+	}
+}

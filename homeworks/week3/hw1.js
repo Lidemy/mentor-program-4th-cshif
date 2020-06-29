@@ -1,28 +1,31 @@
-// LIOJ1021 - 好多星星
+// LIOJ 1021 好多星星
 // 輸入為一個數字 N，請按照規律輸出正確圖形
 
-// 關於 OJ 的輸入與輸出：JavaScript 的話則是使用 `readline.createInterface`，就可以從 `stdin` 讀取輸入。輸出的部份直接用 `console.log` 即可。
-var readline = require('readline');
-var rl = readline.createInterface({
-  input: process.stdin
+// 關於 OJ 的輸入與輸出：JavaScript 的話則是使用 readline.createInterface，就可以從 stdin 讀取輸入。輸出的部份直接用 console.log 即可。
+
+/* eslint-disable no-tabs, indent, max-len, prefer-const, no-use-before-define */
+let readline = require('readline');
+
+let rl = readline.createInterface({
+  input: process.stdin,
 });
 
-var N = []
+let N = [];
 
 // 讀取到一行，先把這一行加進去 N 陣列，最後再一起處理
-rl.on('line', function (line) {
-  N.push(line)
+rl.on('line', (line) => {
+  N.push(line);
 });
 
 // 輸入結束，開始針對 N 做處理
-rl.on('close', function() {
-  printStar(N)
-})
+rl.on('close', () => {
+  printStar(N);
+});
 
 // 上面都不用管，只需要完成這個 function 就好，可以透過 N[i] 拿取內容
-function printStar(N) {
+function printStar() {
 	let str = '';
-	for(let i = 1; i <= N; i++){
+	for (let i = 1; i <= N; i += 1) {
 		str += '*';
 		console.log(str);
 	}
