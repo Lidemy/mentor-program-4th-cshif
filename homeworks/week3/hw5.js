@@ -1,21 +1,52 @@
-// LIOJ1004 - 聯誼順序比大小
+// LIOJ 1004 聯誼順序比大小
 
-var readline = require('readline');
+/* eslint-disable no-tabs, indent, no-use-before-define, prefer-const */
+/* global BigInt */
 
-var lines = []
-var rl = readline.createInterface({
-	input: process.stdin
+let readline = require('readline');
+
+let lines = [];
+let rl = readline.createInterface({
+	input: process.stdin,
 });
 
-rl.on('line', function (line) {
-	lines.push(line)
+rl.on('line', (line) => {
+	lines.push(line);
 });
 
-rl.on('close', function() {
-	solve(lines)
-})
+rl.on('close', () => {
+	solve(lines);
+});
+
+// 7.1 使用 BigInt (LIOJ-AC)
+function solve() {
+	for (let i = 1; i < lines.length; i += 1) {
+		let arr = lines[i].split(' ');
+		let a = BigInt(arr[0]);
+		let b = BigInt(arr[1]);
+		if (arr[2] === '1') { // 比大
+			if (a > b) {
+				console.log('A');
+			} else if (a < b) {
+				console.log('B');
+			} else if (a === b) {
+				console.log('DRAW');
+			}
+		} else if (arr[2] === '-1') { // 比小
+			if (a > b) {
+				console.log('B');
+			} else if (a < b) {
+				console.log('A');
+			} else if (a === b) {
+				console.log('DRAW');
+			}
+		}
+	}
+}
+
+
 /*
-7.1 使用 BigInt (LIOJ-AC)
+7.2 不使用 BigInt
 function solve(lines) {
 	for(let i = 1; i < lines.length; i++){
 		let arr = lines[i].split(' ');
@@ -26,7 +57,7 @@ function solve(lines) {
 				console.log('A');
 			} else if (a < b) {
 				console.log('B');
-			} else if (a == b) {
+			} else if (a === b) {
 				console.log('DRAW');
 			}
 		} else if (arr[2] === '-1') { // 比小
@@ -34,39 +65,13 @@ function solve(lines) {
 				console.log('B');
 			} else if (a < b) {
 				console.log('A');
-			} else if (a == b) {
+			} else if (a === b) {
 				console.log('DRAW');
 			}
 		}
 	}
 }
 */
-
-// 7.2 不使用 BigInt
-function solve(lines) {
-	for(let i = 1; i < lines.length; i++){
-		let arr = lines[i].split(' ');
-		let a = BigInt(arr[0]);
-		let b = BigInt(arr[1]);
-		if (arr[2] === '1') { // 比大
-			if (a > b) {
-				console.log('A');
-			} else if (a < b) {
-				console.log('B');
-			} else if (a === b) {
-				console.log('DRAW');
-			}
-		} else if (arr[2] === '-1') { // 比小
-			if (a > b) {
-				console.log('B');
-			} else if (a < b) {
-				console.log('A');
-			} else if (a === b) {
-				console.log('DRAW');
-			}
-		}
-	}
-}
 
 /*
 1. 先用 console.log 印出 input
