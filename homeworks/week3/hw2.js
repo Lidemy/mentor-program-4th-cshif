@@ -10,24 +10,26 @@ LIOJ1025 - 水仙花數
 現在給你一個範圍 n 到 m，請你求出這範圍之中的水仙花數有哪些
 */
 
-var readline = require('readline');
+/* eslint-disable no-tabs, indent, no-use-before-define, prefer-const */
 
-var lines = []
-var rl = readline.createInterface({
-	input: process.stdin
+let readline = require('readline');
+
+let lines = [];
+let rl = readline.createInterface({
+	input: process.stdin,
 });
 
-rl.on('line', function (line) {
-	lines.push(line)
+rl.on('line', (line) => {
+	lines.push(line);
 });
 
-rl.on('close', function() {
-	solve(lines)
-})
+rl.on('close', () => {
+	solve(lines);
+});
 
-function solve(lines) {
+function solve() {
 	let m = Number(lines[0].split(' ')[1]);
-	for(let num = Number(lines[0].split(' ')[0]); num<=m; num++){
+	for (let num = Number(lines[0].split(' ')[0]); num <= m; num += 1) {
 		let a = num.toString();
 		sum(a, num);
 	}
@@ -35,10 +37,10 @@ function solve(lines) {
 
 function sum(a, num) {
 	let A = 0;
-	for(let j = 0; j < a.length; j++){
-		A += Math.pow(a[j], a.length);
+	for (let j = 0; j < a.length; j += 1) {
+		A += a[j] ** a.length;
 	}
-	if (A == num) {
+	if (A === num) {
 		console.log(num);
 	}
 }
