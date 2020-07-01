@@ -29,7 +29,6 @@ function printStar() {
 		str += '*';
 		console.log(str);
 	}
-	return str;
 }
 
 /*
