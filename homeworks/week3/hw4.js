@@ -33,9 +33,9 @@ function solve() {
 	for (let i = 0; i <= lines.length - 1; i += 1) {
 		let arr = lines[i].split('').reverse().join('');
 		if (arr === lines[i]) {
-		console.log('True');
+			console.log('True');
 		} else {
-		console.log('False');
+			console.log('False');
 		}
 	}
 }
