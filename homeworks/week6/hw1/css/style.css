@@ -4,8 +4,9 @@
 	padding: 0;
 }
 
-/* navbar */
+/* body */
 
+/* ---------- navbar ---------- */
 .navbar {
 	background-color: #FFFFFF;
 	box-shadow: -1.4px -1.4px 6px 0 #888888;
@@ -13,7 +14,6 @@
 	z-index: 1;
 }
 
-/* ---------- wrapper ---------- */
 .navbar .wrapper {
 	align-items: center; /* 水瓶置中 */
 	display: flex;
@@ -24,7 +24,6 @@
 	/*padding: 0 24px;*/
 }
 
-/* ---------- site-name ---------- */
 .navbar__site-name {
 	align-items: center;
 	color: #489846;
@@ -40,7 +39,7 @@
 	margin: 0;
 }
 
-/* ---------- list ---------- */
+/* ---------- navbar list ---------- */
 .navbar__list {
 	display: flex; /* 左右並排 */
 	/* flex-direction:  row; */
@@ -72,8 +71,6 @@
 	color: white;
 	text-decoration: none;
 }
-
-/* body */
 
 /* ---------- banner ---------- */
 .banner {
@@ -108,7 +105,7 @@
 
 /* ---------- intro ---------- */
 .intro {
-	border-bottom: solid 10px #EEEEEE;
+	/*border-bottom: solid 10px #EEEEEE;*/
 	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
 	text-align: center;
 }
@@ -178,7 +175,7 @@
 
 /* ---------- menu ---------- */
 .menu {
-	border-bottom: solid 10px #EEEEEE;
+	/*border-bottom: solid 10px #EEEEEE;*/
 	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
 	text-align: center;
 }
@@ -214,7 +211,7 @@
 
 /* ---------- review ---------- */
 .review {
-	border-bottom: solid 10px #EEEEEE;
+	/*border-bottom: solid 10px #EEEEEE;*/
 	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
 	text-align: center;
 }
@@ -267,12 +264,10 @@
 }
 
 .review__content {
-	width: 565px;
-	height: 205px;
 	border: solid 1px #c7e5ec;
 	border-radius: 5px;
 	box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
-	padding: 0 60px;
+	padding: 0 60px 30px;
 	position: relative;
 	top: -60px;
 }
@@ -350,6 +345,11 @@ iframe {
 	line-height: 2em;
 }
 
+.footer__info p a {
+	color: #484848;
+	text-decoration: none;
+}
+
 .footer__site {
 	text-align: right;
 }
@@ -392,6 +392,13 @@ iframe {
 	/* --------------- intro --------------- */
 	.intro .wrapper {
 	padding: 0 180px;
+	}
+}
+
+@media (max-width: 1080px) {
+	/* ---------- review ---------- */
+	.review__carousel {
+	margin: 60px 120px;
 	}
 }
 
@@ -438,8 +445,8 @@ iframe {
 	}
 
 	.button {
-		display: block;
-		margin: 30px 0;
+		/*display: block;*/
+		margin: 30px 0 0;
 	}
 
 	.btn-order {
@@ -463,12 +470,6 @@ iframe {
 	.section__image img {
 		width: 100%;
 	}
-
-	/* ---------- review ---------- */
-	.review__carousel {
-	margin: 60px 180px;
-	}
-
 
 	/* ---------- footer ---------- */
 	.footer__top .wrapper {
