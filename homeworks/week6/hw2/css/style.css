@@ -229,6 +229,25 @@ textarea {
 
 /* --------------- RWD 要放在後面！ --------------- */
 
+@media (max-width: 640px) {
+	.formAll, .form__bar {
+		width: 100%;
+	}
+
+	.banner__img, .form__bar, .formAll {
+		border-radius: 0;
+	}
+
+	.form__submit input {
+		display: flex;
+		margin: 15px auto;
+	}
+
+	.form__submit p {
+		text-align: center;
+	}
+}
+
 
 
 
