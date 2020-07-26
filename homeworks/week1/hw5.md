@@ -5,7 +5,6 @@
 - 後端：資料庫、伺服器
 
 ## 假設我今天去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
-<<<<<<< HEAD
 - 在搜尋框打上 JavaScript，按下 Enter
 - 瀏覽器接收到「搜尋 JavaScript」的請求 (request)
 - 瀏覽器將請求傳到 DNS server
@@ -15,8 +14,6 @@
 - DNS server 將搜尋結果回傳給發出請求的 IP 位址（我的電腦）
 - 我的電腦的瀏覽器把 google.com 打包的搜尋結果下載下來
 - 瀏覽器把搜尋結果 render 出來給我看
-=======
->>>>>>> mentor-program-4th/master
 
 Ref.:
 - [How the Web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)

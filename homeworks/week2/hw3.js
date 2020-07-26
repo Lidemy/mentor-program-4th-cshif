@@ -23,6 +23,20 @@ function reverse(str) {
 // function: 接收字串，拆成陣列
 // for loop: 把第一個字母調到第一位，重複 str.length 遍
 
+/*
+examples:
+
+迴圈倒著做就好
+
+function reverse(str) {
+  let result = '';
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    result += str[i];
+  }
+  console.log(result);
+}
+*/
+
 reverse('hello'); // olleh
 reverse('function'); // noitcnuf
 reverse('先別急著寫 leetcode');
