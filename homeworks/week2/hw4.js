@@ -16,5 +16,19 @@ function printFactor(n) {
 // for loop: 跑 1~n
 // if: 若餘數為零，回傳
 
+/*
+examples:
+
+這題的迴圈不要從 0 開始，因為語意上是不通的，你不會想拿數字去除以 0
+
+function printFactor(n) {
+  for (let i = 1; i <= n; i += 1) {
+    if (n % i === 0) {
+      console.log(i);
+    }
+  }
+}
+*/
+
 printFactor(41);
 printFactor(12);
