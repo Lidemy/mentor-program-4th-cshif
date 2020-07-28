@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新拖延運動報名表單</title>
+	<!-- normalize.css -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+	<!-- my styleshhet -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<sectoin class="lazy__form">
+		<!-- banner__img -->
+		<div class="formAll banner__img"></div>
+		<!-- form__title -->
+		<div>
+			<div class="form__bar"></div>
+			<div class="formAll form__title">
+				<h1>新拖延運動報名表單</h1>
+				<p class="form__desc">活動日期：2020.12.10 ~ 2020.12.11</p>
+				<p class="form__desc">活動地點：台北市大安區新生南路二段 1 號</p>
+				<p class="form__desc required">* 必填</p>
+			</div>
+		</div>
+		<!-- form__question -->
+		<form action="" method="">
+			<div class="formAll form__question">
+				<label for="name" class="heading">暱稱<span class="required"> *</span></label>
+				<input class="fillIn" id="name" type="text" name="name">
+			</div>
+			<div class="formAll form__question">
+				<label for="email" class="heading">電子郵件<span class="required"> *</span></label>
+				<input class="fillIn" id="email" type="email" name="email">
+			</div>
+			<div class="formAll form__question">
+				<label for="mobile" class="heading">手機號碼<span class="required"> *</span></label>
+				<input class="fillIn" id="mobile" type="number" name="mobile">
+			</div>
+			<div class="formAll form__question">
+				<p class="heading">報名類型<span class="required"> *</span></p>
+				<!---->
+				<div class="textInForm">
+					<label for="signupChoice1">躺在床上用想像力實作
+						<input id="signupChoice1" type="radio" name="signup" value="bed">
+						<span class="radio__btn">
+							<div class="radio__btn__main"></div>
+						</span>
+					</label>
+				</div>
+				<!---->
+				<div class="textInForm">
+					<label for="signupChoice2">趴在地上滑手機找現成的
+						<input id="signupChoice2" type="radio" name="signup" value="bed">
+						<span class="radio__btn">
+							<div class="radio__btn__main"></div>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="formAll form__question">
+				<label for="channel" class="heading">怎麼知道這個活動的？<span class="required"> *</span></label>
+				<input class="fillInWide" id="channel" type="text" name="channel">
+			</div>
+			<div class="formAll form__question">
+				<label for="else" class="heading">其它</label>
+				<p class="ques__desc">對活動的一些建議</p>
+				<textarea class="fillInWide" name="else" id="else" cols="" rows=""></textarea>
+			</div>
+			<div class="formAll form__submit">
+				<input type="submit" value="提交">
+				<p>請勿透過表單送出您的密碼。</p>
+			</div>
+		</form>
+	</sectoin>
+	<!-- footer -->
+	<footer class="footer">
+		<p>© 2020 © Copyright. All rights Reserved.</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
