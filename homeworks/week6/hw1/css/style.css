@@ -235,7 +235,7 @@
 }
 
 .review__carousel {
-	margin: 30px 300px 60px;
+	margin: 30px 240px 60px;
 	padding: 30px;
 }
 
@@ -398,7 +398,7 @@ iframe {
 @media (max-width: 1080px) {
 	/* ---------- review ---------- */
 	.review__carousel {
-	margin: 60px 120px;
+	margin: 60px 90px;
 	}
 }
 
@@ -441,7 +441,7 @@ iframe {
 
 	/* --------------- intro --------------- */
 	.intro .wrapper {
-	padding: 0 120px;
+	padding: 0 105px;
 	}
 
 	.button {
@@ -491,13 +491,31 @@ iframe {
 @media (max-width: 600px) {
 	/* --------------- intro --------------- */
 	.intro .wrapper {
-		padding: 0 90px;
+		padding: 0 75px;
 	}
 	
 	/* --------------- footer --------------- */
 	.footer__top .wrapper {
 		flex-direction: column-reverse;
 		margin: 0 60px;
+	}
+}
+
+/* ----- <= 520px ----- */
+@media (max-width: 520px) {
+	.review__carousel {
+		margin: 60px 0;
+	}
+
+	.intro .wrapper {
+		padding: 0 30px;
+	}
+}
+
+/* ----- <= 377px ----- */
+@media (max-width: 377px) {
+	.navbar .wrapper {
+		height: 100%;
 	}
 }
 
