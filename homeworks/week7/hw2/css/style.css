@@ -1,0 +1,304 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* body */
+
+/* ---------- navbar ---------- */
+.navbar {
+	background-color: #FFFFFF;
+	box-shadow: -1.4px -1.4px 6px 0 #888888;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar .wrapper {
+	align-items: center; /* 水瓶置中 */
+	display: flex;
+	height: 120px;
+	justify-content: space-around; /* 左右兩邊推開 */
+	margin: 0 auto;
+	max-width: 1280px;
+	/*padding: 0 24px;*/
+}
+
+.navbar__site-name {
+	align-items: center;
+	color: #489846;
+	display: flex;
+	font-family: 'Lobster Two', cursive;
+	font-size: 36px;
+	margin: 0;
+}
+
+.navbar__site-name span {
+	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+/* ---------- navbar list ---------- */
+.navbar__list {
+	display: flex; /* 左右並排 */
+	/* flex-direction:  row; */
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 18px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar__list li {
+	border-radius: 8px;
+	margin-left: 18px;
+	transition: background 0.1s ease-in-out;
+}
+
+.navbar__list li:hover {
+	background-color: #f88379;
+}
+
+.navbar__list li a {
+	color: #3c3c3c;
+	display: block; /* !!! */
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+.navbar__list li a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* ---------- intro ---------- */
+.faq {
+	/*border-bottom: solid 10px #EEEEEE;*/
+	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+	text-align: center;
+}
+
+.faq .wrapper {
+	padding: 0 300px 100px;
+}
+
+.faq__title {
+	border-left: solid 12px #a3dea2;
+	color: #242424;
+	display: inline-block;
+	font-size: 32px;
+	font-weight: normal;
+	margin: 75px 0 45px;
+	padding-left: 16px;
+}
+
+.faq__block {
+	border-bottom: solid 1px #70b282;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+.faq__ques {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.6em;
+	padding: 24px 0;
+}
+
+.faq__ques span {
+	color: #70b282;
+	font-weight: bold;
+}
+
+.faq__desc {
+	color: #242424;
+	display: none;
+	font-size: 16px;
+	line-height: 1.6em;
+	padding: 1em 0;
+}
+
+.faq__desc p, .faq__desc div {
+	padding-bottom: 1em;
+}
+
+.faq__desc div {
+	padding-left: 2em;
+}
+
+/* --------------- footer --------------- */
+.footer {
+	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+	text-align: center;
+}
+
+.footer__top {
+	background: #e8efee;
+	color: #484848;
+	padding: 60px 0;
+}
+
+.footer__top .wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+}
+
+.footer__info {
+	font-size: 16px;
+	/* margin: 0; */
+	text-align: left;
+}
+
+.footer__info p {
+	line-height: 2em;
+}
+
+.footer__info p a {
+	color: #484848;
+	text-decoration: none;
+}
+
+.footer__site {
+	text-align: right;
+}
+
+.footer__social a {
+	text-decoration: none;
+}
+
+.footer__logo {
+	font-family: 'Lobster Two', cursive;
+	font-size: 36px;
+	margin-bottom: 24px;
+}
+
+.footer__logo a {
+	color: #489846;
+	text-decoration: none;
+}
+
+.footer__social {
+	color: #484848;
+	margin-bottom: 24px;
+}
+
+.footer__social a {
+	color: #484848;
+}
+
+.footer__bottom {
+	background: #35564b;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 16px;
+}
+
+/* --------------- RWD 要放在後面！ --------------- */
+
+/* ----- 840px ~ 1280px ----- */
+@media (min-width: 840px) and (max-width: 1280px) {
+	/* --------------- intro --------------- */
+	.faq .wrapper {
+	padding: 0 180px 100px;
+	}
+}
+
+/* ----- <= 840px ----- */
+@media (max-width: 840px) { 
+	/* 一般平板是 768px */
+	/* --------------- navbar --------------- */
+
+	.navbar .wrapper {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0px;
+	}
+
+	.navbar__site-name {
+		margin-top: 16px;
+	}
+
+	.navbar__list {
+		display: flex;
+		width: 100%;
+	}
+
+	.navbar__list li {
+		border-radius: 0;
+		flex: 1;
+		margin: 0;
+		text-align: center;
+	}
+
+	.navbar__list li a {
+		padding: 16px 0;
+	}
+
+	/* --------------- intro --------------- */
+	.faq .wrapper {
+	padding: 0 105px 50px;
+	}
+
+	.button {
+		/*display: block;*/
+		margin: 30px 0 0;
+	}
+
+	.btn-order {
+		margin-right: 0;
+	}
+
+	.btn-query {
+		margin-left: 0;
+	}
+
+	/* ---------- footer ---------- */
+	.footer__top .wrapper {
+		flex-direction: column-reverse;
+		margin: 0 90px;
+	}
+
+	.footer__site {
+		margin: 0;
+		text-align: left;
+	}
+
+	.footer__info {
+		margin: 0;
+	}
+}
+
+/* ----- <= 600px ----- */
+@media (max-width: 600px) {
+	/* --------------- intro --------------- */
+	.faq .wrapper {
+		padding: 0 75px 50px;
+	}
+	
+	/* --------------- footer --------------- */
+	.footer__top .wrapper {
+		flex-direction: column-reverse;
+		margin: 0 60px;
+	}
+}
+
+/* ----- <= 520px ----- */
+@media (max-width: 520px) {
+	.faq .wrapper {
+		padding: 0 30px 30px;
+	}
+}
+
+/* ----- <= 377px ----- */
+@media (max-width: 377px) {
+	.navbar .wrapper {
+		height: 100%;
+	}
+}
+
+
+
+

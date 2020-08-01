@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* body */
+
+body {
+	background-color: #fef2dd;
+	color: #202124;
+}
+
+/* header */
+
+/* ---------- banner__img ---------- */
+.banner__img {
+	background-image: url('../img/lazy.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	border-radius: 8px;
+	width: 640px;
+	height: 160px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	z-index: -1;
+}
+
+/* ---------- form__title ---------- */
+/* {
+	border-top: solid 10px rgb(244, 169, 46);
+}
+*/
+
+.form__bar {
+	background-color: #AF5F3C;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 640px;
+	height: 10px;
+}
+
+.formAll {
+	border: solid 1.2px rgb(218, 220, 224);
+	border-radius: 10px;
+	padding: 24px;
+	margin-top: 15px;
+	width: 640px;
+}
+
+.form__title {
+	background: rgba(255,255,255);
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	font-family: 'Noto Sans TC', sans-serif;
+	margin-top: 0;
+}
+
+.form__title h1 {
+	margin: 0 0 30px;
+	font-weight: 400;
+}
+
+.form__desc {
+	font-size: 14px;
+	line-height: 2em;
+}
+
+.required {
+	color: #e74149;
+}
+
+/* ---------- lazy__form ---------- */
+.form__question {
+	background: rgba(255,255,255);
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.form__question .heading {
+	display: block;
+	font-size: 16px;
+	letter-spacing: .1px;
+	margin-bottom: 16px;
+}
+
+.form__question .fillIn {
+	border: none;
+	border-bottom: solid 1.2px rgb(218, 220, 224);
+	line-height: 1.6em;
+	margin-bottom: 8px;
+	width: 300px;
+	height: 36px;
+}
+
+.form__question .fillInWide {
+	border: none;
+	border-bottom: solid 1.2px rgb(218, 220, 224);
+	line-height: 1.6em;
+	margin-bottom: 8px;
+	width: 300px;
+	height: 36px;
+	width: 100%;
+}
+
+/* ----- signup (begin) ----- */
+input[type="radio"] {
+	display: none;
+}
+
+.choice__container label {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+	line-height: 36px;
+}
+
+.choice__container label::before {
+	content: "";
+	border: solid 2px #999999;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	margin: 0 12px 0 16px;
+}
+
+/* 不知道為什麼沒效果 */
+input[type="radio"]:hover label::before {
+	content: "";
+	border: solid 2px #AF5F3C;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	margin: 0 12px 0 16px;
+}
+
+input[type="radio"]:checked + label::before {
+	content: "";
+	border: solid 2px #AF5F3C;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	margin: 0 12px 0 16px;
+}
+
+/* ----- signup (end) ----- */
+
+.ques__desc {
+	font-size: 14px;
+    margin-bottom: 16px;
+	padding-bottom: 8px;
+}
+
+textarea {
+	width: 100%;
+}
+
+.form__submit {
+	border: none;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 60px;
+	padding: 0;
+}
+
+.form__submit input {
+	background-color: #AF5F3C;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 18px;
+	padding: 12px 28px;
+	transition: all 0.16s ease-in-out;
+}
+
+.form__submit input:hover {
+	background-color: #9c5535;
+}
+
+/* ---------- footer ---------- */
+.footer {
+	background: #000000;
+	height: 40px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+	color: #999999;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* --------------- RWD 要放在後面！ --------------- */
+
+@media (max-width: 640px) {
+	.formAll, .form__bar {
+		width: 100%;
+	}
+
+	.banner__img, .form__bar, .formAll {
+		border-radius: 0;
+	}
+
+	.form__submit input {
+		display: flex;
+		margin: 15px auto;
+	}
+
+	.form__submit p {
+		text-align: center;
+	}
+}
+
+
+
+
