@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Todo List</title>
+	<!-- normalize.css -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+	<!-- my stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<button></button>
+		<div class="block" id="new">
+			<p class="title"><span>NEW</span> TODO</p>
+			<div>
+				<input type="text" placeholder="e.g. 買醬油">
+				<button>add</button>
+			</div>
+		</div>
+		<div class="block" id="todo">
+			<p class="title">TODO</p>
+			<div>
+				<label for=""><input type="checkbox">Watering plants<span></span></label>
+				<button>remove</button>
+			</div>
+			<div>
+				<label for=""><input type="checkbox">買咖啡豆<span></span></label>
+				<button>remove</button>
+			</div>
+		</div>
+		<div class="block" id="log">
+			<p class="title">LOG</p>
+			<div>
+				<label for=""><input type="checkbox" id="" checked>Pay bills<span></span></label>
+				<button>remove</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
