@@ -13,30 +13,29 @@
 </head>
 <body>
 	<div class="container">
-		<button></button>
 		<div class="block" id="new">
 			<p class="title"><span>NEW</span> TODO</p>
-			<div>
+			<div class="todo">
 				<input type="text" placeholder="e.g. 買醬油">
-				<button>add</button>
+				<button id="add-btn">add</button>
 			</div>
 		</div>
-		<div class="block" id="todo">
-			<p class="title">TODO</p>
-			<div>
-				<label for=""><input type="checkbox">Watering plants<span></span></label>
-				<button>remove</button>
+		<div class="block" id="list">
+			<p class="title">LIST</p>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check">Watering plants<span></span></label>
+				<button class="remove">remove</button>
 			</div>
-			<div>
-				<label for=""><input type="checkbox">買咖啡豆<span></span></label>
-				<button>remove</button>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check">買咖啡豆<span></span></label>
+				<button class="remove">remove</button>
 			</div>
 		</div>
 		<div class="block" id="log">
 			<p class="title">LOG</p>
-			<div>
-				<label for=""><input type="checkbox" id="" checked>Pay bills<span></span></label>
-				<button>remove</button>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check" checked>Pay bills<span></span></label>
+				<button class="remove">remove</button>
 			</div>
 		</div>
 	</div>

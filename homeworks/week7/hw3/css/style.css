@@ -10,6 +10,10 @@
 	margin-top: 180px;
 }
 
+#log {
+	display: none;
+}
+
 .block {
 	margin-bottom: 30px;
 }
@@ -48,12 +52,13 @@
 	color: #333;
 }
 
-#todo div, #log div {
+#list div, #log div {
 	border-bottom: solid 1px #DDDDDD;
 	line-height: 60px;
 	position: relative;
 }
 
+/* 由 input[type="checkbox"]:checked + span::before 觸發*/
 #log div > label {
 	text-decoration: line-through;
 }
@@ -132,4 +137,8 @@ input[type="checkbox"]:checked + span::before {
 	left: 9px;
 	font-size: 27px;
 	z-index: -1;
+}
+
+.done {
+	text-decoration: line-through;
 }
