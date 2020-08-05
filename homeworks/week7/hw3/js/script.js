@@ -2,6 +2,15 @@ const newTodo = document.querySelector('input[type="text"]');
 const addBtn = document.querySelector('#add-btn');
 const list = document.querySelector('#list');
 
+// add new todo by enter
+newTodo.addEventListener('keyup', (e) => {
+	if (newTodo.value === '') {
+		e.preventDefault();
+	}
+	if (e.keyCode === 13) {
+		addBtn.click();
+	}
+})
 
 // add new todo
 addBtn.addEventListener('click', (e) => {
