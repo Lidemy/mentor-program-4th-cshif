@@ -40,10 +40,10 @@ body {
 	height: 10px;
 }
 
-.formAll {
+.form__block {
 	border: solid 1.2px rgb(218, 220, 224);
 	border-radius: 10px;
-	padding: 24px;
+	padding: 30px 24px;
 	margin-top: 15px;
 	width: 640px;
 }
@@ -54,6 +54,7 @@ body {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	font-family: 'Noto Sans TC', sans-serif;
+	padding-bottom: 60px;
 	margin-top: 0;
 }
 
@@ -65,13 +66,24 @@ body {
 .form__desc {
 	font-size: 14px;
 	line-height: 2em;
+	padding-bottom: 3px;
 }
 
-.required {
+.error {
+	visibility: hidden;
+}
+
+.error__show {
+	visibility: visible;
+}
+
+.required__hint {
 	color: #e74149;
+	font-size: 14px;
+	position: absolute;
 }
 
-/* ---------- lazy__form ---------- */
+/* ---------- lazy-form ---------- */
 .form__question {
 	background: rgba(255,255,255);
 	font-family: 'Noto Sans TC', sans-serif;
@@ -103,7 +115,7 @@ body {
 	width: 100%;
 }
 
-/* ----- signup (begin) ----- */
+/* ----- choice (begin) ----- */
 input[type="radio"] {
 	display: none;
 }
@@ -116,6 +128,10 @@ input[type="radio"] {
 	line-height: 36px;
 }
 
+.choice__container div:last-child {
+	padding-bottom: 8px;
+}
+
 .choice__container label::before {
 	content: "";
 	border: solid 2px #999999;
@@ -125,8 +141,8 @@ input[type="radio"] {
 	margin: 0 12px 0 16px;
 }
 
-/* 不知道為什麼沒效果 */
-input[type="radio"]:hover label::before {
+/* [solved] Q: 不知道為什麼沒效果 A: input 和 label 是平行的，要用 "+" */
+input[type="radio"]:hover + label::before {
 	content: "";
 	border: solid 2px #AF5F3C;
 	border-radius: 50%;
@@ -142,9 +158,10 @@ input[type="radio"]:checked + label::before {
 	height: 14px;
 	width: 14px;
 	margin: 0 12px 0 16px;
+	background-color: #fef2dd;
 }
 
-/* ----- signup (end) ----- */
+/* ----- choice (end) ----- */
 
 .ques__desc {
 	font-size: 14px;
@@ -197,11 +214,11 @@ textarea {
 /* --------------- RWD 要放在後面！ --------------- */
 
 @media (max-width: 640px) {
-	.formAll, .form__bar {
+	.form__block, .form__bar {
 		width: 100%;
 	}
 
-	.banner__img, .form__bar, .formAll {
+	.banner__img, .form__bar, .form__block {
 		border-radius: 0;
 	}
 

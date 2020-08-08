@@ -14,60 +14,71 @@
 <body>
 	<sectoin class="lazy__form">
 		<!-- banner__img -->
-		<div class="formAll banner__img"></div>
+		<div class="form__block banner__img"></div>
 		<!-- form__title -->
 		<div>
 			<div class="form__bar"></div>
-			<div class="formAll form__title">
+			<div class="form__block form__title">
 				<h1>新拖延運動報名表單</h1>
 				<p class="form__desc">活動日期：2020.12.10 ~ 2020.12.11</p>
 				<p class="form__desc">活動地點：台北市大安區新生南路二段 1 號</p>
-				<p class="form__desc required">* 必填</p>
+				<p class="form__desc required__hint">* 必填</p>
 			</div>
 		</div>
 		<!-- form__question -->
 		<form name="lazy" class="lazy-form" action="" method="">
 			<!-- name -->
-			<div id="nameId" class="formAll form__question">
-				<label for="name" class="heading">暱稱<span class="required"> *</span></label>
+			<div id="nameId" class="form__block form__question required">
+				<label for="name" class="heading">暱稱<span class="required__hint"> *</span></label>
 				<input class="fillIn" id="name" type="text" name="name">
+				<p class="required__hint error">欸，填一下暱稱啊</p>
 			</div>
 			<!-- email -->
-			<div id="emailId" class="formAll form__question">
-				<label for="email" class="heading">電子郵件<span class="required"> *</span></label>
-				<input class="fillIn" id="email" type="email" name="email">
+			<div id="emailId" class="form__block form__question required">
+				<label for="email" class="heading">電子郵件<span class="required__hint"> *</span></label>
+				<input class="fillIn" id="email" type="text" name="email">
+				<p class="required__hint error">欸，填一下電子郵件啊</p>
 			</div>
 			<!-- mobile -->
-			<div id="mobileId" class="formAll form__question">
-				<label for="mobile" class="heading">手機號碼<span class="required"> *</span></label>
-				<input class="fillIn" id="mobile" type="number" name="mobile" maxlength="12">
+			<div id="mobileId" class="form__block form__question required">
+				<label for="mobile" class="heading">手機號碼<span class="required__hint"> *</span></label>
+				<input class="fillIn" id="mobile" type="text" name="mobile" maxlength="12">
+				<p class="required__hint error">欸，填一下手機號碼啊</p>
 			</div>
-			<!-- signup -->
-			<div id="signupId" class="formAll form__question">
-				<p class="heading">報名類型<span class="required"> *</span></p>
+			<!-- choice -->
+			<div id="choiceId" class="form__block form__question required">
+				<p class="heading">報名類型<span class="required__hint"> *</span></p>
 				<div class="choice__container">
-					<input type="radio" name="signup" id="bed">
-					<label for="bed">躺在床上用想像力實作</label>
-					<input type="radio" name="signup" id="floor">
-					<label for="floor">趴在地上滑手機找現成的</label>
-					<input type="radio" name="signup" id="couch">
-					<label for="couch">攤在沙發等白日夢靈感</label>
+					<div>
+						<input type="radio" name="choice" id="choice1">
+						<label for="choice1">躺在床上用想像力實作</label>
+					</div>
+					<div>
+						<input type="radio" name="choice" id="choice2">
+						<label for="choice2">趴在地上滑手機找現成的</label>
+					</div>
+					<div>
+						<input type="radio" name="choice" id="choice3">
+						<label for="choice3">攤在沙發等白日夢靈感</label>
+					</div>
 				</div>
+				<p class="required__hint error">欸，勾一下報名類型啊</p>
 			</div>
 			<!-- channel -->
-			<div id="channelId" class="formAll form__question">
-				<label for="channel" class="heading">怎麼知道這個活動的？<span class="required"> *</span></label>
-				<input class="fillInWide" id="channel" type="text" name="channel">
+			<div id="channelId" class="form__block form__question required">
+				<label for="channel" class="heading">怎麼知道這個活動的？<span class="required__hint"> *</span></label>
+				<input class="fillIn fillInWide" id="channel" type="text" name="channel">
+				<p class="required__hint error">欸，填一下怎麼知道這個活動的啊</p>
 			</div>
 			<!-- else -->
-			<div id="elseId" class="formAll form__question">
+			<div id="elseId" class="form__block form__question">
 				<label for="else" class="heading">其它</label>
 				<p class="ques__desc">對活動的一些建議</p>
 				<textarea class="fillInWide" name="else" id="else" cols="" rows=""></textarea>
 			</div>
 			<!-- submit -->
-			<div class="formAll form__submit">
-				<input type="submit" value="提交" onclick="signup()">
+			<div class="form__block form__submit">
+				<input type="submit" value="提交">
 				<p>請勿透過表單送出您的密碼。</p>
 			</div>
 		</form>
