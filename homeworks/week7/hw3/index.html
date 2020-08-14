@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Todo List</title>
+	<!-- normalize.css -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+	<!-- my stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="block" id="new">
+			<p class="title"><span>NEW</span> TODO</p>
+			<div class="todo">
+				<input type="text" placeholder="e.g. 買威力彩">
+				<button id="add-btn">add</button>
+			</div>
+		</div>
+		<div class="block" id="list">
+			<p class="title">LIST</p>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check">Watering plants<span></span></label>
+				<button class="remove">remove</button>
+			</div>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check">買咖啡豆<span></span></label>
+				<button class="remove">remove</button>
+			</div>
+		</div>
+		<div class="block" id="log">
+			<p class="title">LOG</p>
+			<div class="todo">
+				<label for=""><input type="checkbox" class="check" checked>Pay bills<span></span></label>
+				<button class="remove">remove</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

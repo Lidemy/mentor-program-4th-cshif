@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Just A Bite! 就咬一口</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+	<!-- my styleshhet -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar">
+		<div class="wrapper">
+			<div class="navbar__site-name">
+				Just A Bite!<!-- <br /><span>就咬一口</span>-->
+			</div>
+			<ul class="navbar__list">
+				<li class="active"><a href="#">🎉 抽個大獎</a></li>
+				<li><a href="#">我要點餐</a></li>
+				<li><a href="#">查詢訂單</a></li>
+				<li><a href="#">常見問題</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- faq -->
+	<div class="faq">
+		<section class="wrapper">
+			<h2 class="faq__title">
+				FAQ - 常見問題
+			</h2>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ1()">
+					<span>Q1: </span>非台灣國籍，如何完成實名認證？
+				</h3>
+				<div id="q1" class="faq__desc">
+					<p>因海關關務署的 EZ WAY APP 限制關係，非台灣籍人士，請使用紙本委任方式，來完成跨境包裹的報關程序。</p>
+					<p>紙本委任檔案下載，請點我</p>
+					<p>如果在填寫紙本委任書，或是使用程序上需要協助時，可以參考以下兩種方式，詢問關貿客服人員進一步的幫忙喔。</p>
+					<p>關貿網路股份有限公司客服人員，線上客服</p>
+					<p>關貿網路股份有限公司客服人員，電話：02-77352812。</p>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ2()">
+					<span>Q2: </span>收件人稅號（身分證字號）報關說明
+				</h3>
+				<div id="q2" class="faq__desc">
+					<p>因應物流商商品跨境寄送通關作業，台灣地區會員購買海外商品時，若收件方為個人，設計館需提供「收件人稅號」（即身分證字號）以便快遞物流業者可以順利完成出貨派送與通關。</p>
+					<p>你所提供的個人資訊僅供設計師以及物流業者做為報關用，你可以在收到商品後至訂單頁面內點選『已收到商品』，訂單完成後你的身分證字號將會自動移除不再顯示，Just A Bite 也不會紀錄你的身分證資訊。</p>
+					<p>若你在送出訂單後有所疑慮，欲撤回你的個人資訊，請在設計師完成出貨前透過站內信與設計師溝通退款，若設計師已出貨，則你必須依照正常退貨流程完成退貨，退貨完成後訂單視為取消，你的身分證字號也會一並刪除。</p>
+					<p>若有任何問題都歡迎聯絡我們，Just A Bite 團隊將會儘速協助你，謝謝。</p>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ3()">
+					<span>Q3: </span>什麼是實名認證？
+				</h3>
+				<div id="q3" class="faq__desc">
+					<p>什麼是實名認證呢？</p>
+					<p>台灣關務署自 107 年 6 月 20 日起針對完稅價格新臺幣 5 萬元以下進口包裹透過指定 EZ Way App 提供「實名認證」服務。</p>
+					<p>完成實名認證的好處：</p>
+					<div>
+						<ul>
+							<li>保護你的個資資訊不外洩</li>
+							<li>加速你的海外包裹通關效率</li>
+							<li>報關無紙化，免等候，透過 EZ Way App 一次搞定</li>
+						</ul>
+					</div>
+					<p>還沒下載 EZ Way APP 嗎？Just A Bite 已經貼心幫你找好連結了，請參考下方資訊，快快完成實名認證，不要讓你的包裹等候太久啊</p>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ4()">
+					<span>Q4: </span>完成實名認證的重要性
+				</h3>
+				<div id="q4" class="faq__desc">
+					<p>台灣關務署自 109 年 3 月 16 起試辦進口貨物實名認證，並將於 109 年 5 月 16 日 （原訂 4/16 延期至 5/16) 正式實施進口快遞貨物不受理報關之收單邏輯檢查。</p>
+					<p>以下使用簡白的方式來和大家說明：</p>
+					<p>如果你尚未透過 EZ Way APP 完成實名認證的程序，當海關第一次檢核到你的跨境包裹時，將會先暫時給予緩衝機制。</p>
+					<p>當海關第二次檢核到你的跨境包裹，而你未於貨物放行之翌日起 7 日內，透過實名認證EZ Way APP或自然人憑證登入方式進行線上確認者，並經實名認證平臺傳送海關通關系統比對銷案者，將由通關系統自動列入異常收貨人名單。列入異常名單者，海關將會不受理報關，而你也會無法順利取得跨境包裹。</p>
+					<p>相關資訊可參考下方：</p>
+					<div>
+						<ul>
+							<li>台灣關務署</li>
+							<li>新聞媒體資訊</li>
+						</ul>
+					</div>
+					<p>如果你已經下載了 EZ Way APP，但不確認該如何完成認證，可以參考下方文章：</p>
+					<p>實名認證要如何操作？（EZ way APP）</p>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ5()">
+					<span>Q5: </span>EZ Way APP 實名認證注意事項
+				</h3>
+				<div id="q5" class="faq__desc">
+					<p>要使用 EZ Way APP 辦理實名認證時，需留意以下事項：</p>
+					<div>
+						<ol>
+							<li>電信認證：僅能使用3G或4G網路環境下註冊，且手機門號擁有者與註冊者相同，於 EZ Way APP上填列手機門號、身分證字號及姓名，資料會送至電信業者確認身分，正確即完成註冊。 （註冊的聯絡電話號碼，需與手機內的 SIM 卡號碼相同）</li>
+							<li>簡訊認證：非手機門號所有者、預付卡或特殊資費方案等，可選擇簡訊認證，收到通知後於驗證碼欄位輸入簡訊認證碼，於 EZ Way APP 註冊畫面填上完整姓名、身分證字號及電子信箱，並上傳身分證正反面照片(清晰照片)，即可完成註冊。</li>
+							<li>公司行號或無法透過 EZ Way APP 認證：可至實名認證平台Web ，使用自然人憑證註冊，輸入帳號(自設)、密碼(自設)、姓名、身分證字號、連絡電話及電子信箱，即可完成註冊。*之後若有個人進口紀錄資料，仍須以此平台登入查詢。</li>
+							<li>若為雙卡機，註冊前請拔卡註冊，僅能註冊預設上網手機門號。 </li>
+							<li>實名認證中的「英文姓名」欄位，請填寫與護照相同之姓名。</li>
+							<li>如無法以 EZ Way APP 認證及實名認證平台辦理者，請於進口報關時以紙本委任方式(個案委任書)辦理進口通關程序。下載連結請點我</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ6()">
+					<span>Q6: </span>購買海外商品時，需要完成實名認證並提供身分證字號嗎？實名認證要如何操作？
+				</h3>
+				<div id="q6" class="faq__desc">
+					<p>因應台灣財政部關務署公告，自 109 年 1 月 16 日起，海外包裹進口入境台灣前，收件人應先完成實名認證以利包裹送達。</p>
+					<p>建議收件人先透過手機下載關務署指定之實名認證 APP「易利委 EZ WAY」並完成個人身份資料之實名認證註冊，同時請確保下單時填寫完整中文姓名，以利海關後續通關作業，實名認證步驟，請見下方示意圖。</p>
+					<p>若對此公告有更多疑問，可電洽關務署詢問：<br>聯絡人：關務署通關業務組進口業務科<br>聯絡資訊：02-25505500 分機 2539</p>
+					<p>台灣地區會員購買海外商品時，若收件方為個人，快遞業者依照台灣海關相關規定，可能需請收件人提供「收件人稅號」（即身分證字號），以便快遞業者可以順利完成通關與派送。</p>
+					<p>若對於提供個人資訊有疑慮，可以透過站內信與設計師詢問是否可更改寄送方式（如: 郵寄）。</p>
+					<p>實名認證步驟：</p>
+					<div>
+						<ol>
+							<li>下載關務署指定之實名認證 APP「易利委 EZ WAY」</li>
+							<li>於「個資宣告」點選「我同意」</li>
+							<li>進入 app 後點擊「會員註冊」</li>
+							<li>輸入「會員註冊」相關資料，勾選「簡訊認證」並於「證件號碼」欄位輸入身分證字號</li>
+							<li>輸入簡訊認證碼後點選「送出」</li>
+							<li>設定密碼及其他個人資訊後，上傳證件正反面後點選「送出」</li>
+							<li>送出後會於註冊信箱收到註冊成功認證信，主旨為「報關委任 - 帳號申請完成」，收到此封信表示已註冊成功，並完成實名認證。後續不需再填寫「報關委任」或「實名委任」，日後若有成立跨境交易將符合海關審核規定，不用再次實名認證。</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="faq__block">
+				<h3 class="faq__ques" onclick="toggleQ7()">
+					<span>Q7: </span>EZ Way APP 委任確認流程
+				</h3>
+				<div id="q7" class="faq__desc">
+					<p>完成實名認證後，你的跨境物流商會為你的包裹辦理報關程序，你將會於 EZ Way APP 收到「委任確認」的APP推播通知，請參考下方委任確認處理流程。</p>
+					<div>
+						<ol>
+							<li>點選「實名委任」</li>
+							<li>點選「委任確認」</li>
+							<li>輸入查詢日期，其他欄位都不用填寫，直接按下「送出」即可</li>
+							<li>畫面會自動顯示符合之清單，請點選要確認之訂單</li>
+							<li>畫面顯示該筆報關資料，請檢視報關資料是否正確，如正確請點選「申報相符」。確認完畢後案件狀態即變更為綠色的「申報相符」，這樣就是完成委任確認，之後請透過訂單頁面留意包裹寄送進度就可以囉。</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="wrapper">
+				<div class="footer__info">
+					<p>餐館地址: <a href="http://maps.google.com/?q=天上地下天堂路三分之一里六段 520 號" target="_blank">天上地下天堂路三分之一里六段 520 號</a></p>
+					<p>訂位專線：02-1314-5566</p>
+					<p>營業時間：週一〜週五 09:00~18:00 / 週六、週日、國定假日（含連假）休息</p>
+					<p>email: <a href="mailto:service@justabite.com.tw" target="_blank">service@justabite.com.tw</a></p>
+				</div>
+				<div class="footer__site">
+					<div class="footer__logo">
+						<a href="#">Just A Bite!</a>
+					</div>
+					<div class="footer__social">
+						<span><a href="#">Facebook</a></span> | 
+						<span><a href="#">Instagram</a></span> | 
+						<span><a href="#">YouTube</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			Copyright © 2020 Just A Bite All Rights Reserved. 就咬一口股份有限公司版權所有
+		</div>
+	</footer>
+	<!-- script -->
+	<script src="js/script.js"></script>
+</body>
+</html>
