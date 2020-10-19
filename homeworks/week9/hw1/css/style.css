@@ -1,0 +1,152 @@
+* {
+	/* outline: 1px solid gold; */
+}
+
+body {
+	margin: 0;
+	background: #f7f7f7;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, p {
+	margin: 0;
+}
+
+/* ----- header ----- */
+
+.warning {
+	background: #FBE251;
+	color: #0C0C0C;
+	border-top: 3px solid #0C0C0C;
+	border-bottom: 3px solid #0C0C0C;
+	font-weight: bold;
+	text-align: center;
+	padding: .5rem 0;
+}
+
+.error {
+	margin: 1rem 0;
+	color: red;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 500;
+}
+
+.done {
+	margin: 1rem 0;
+	color: blue;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 500;
+}
+
+/* ----- main ----- */
+.board {
+	background: #FFF;
+	width: 720px;
+	margin: 1rem auto;
+	padding: 3rem;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 3px #e8e8e8;
+	border-radius: 5px;
+}
+
+/* ----- navbar ----- */
+.navbar {
+	text-align: right;
+}
+
+.navbar__btn {
+	display: inline-block;
+	font-size: 0;
+	margin: 1rem 0;
+}
+
+/* ----- board title ----- */
+.board__title {
+	font-size: 3rem;
+	font-weight: 100;
+}
+
+/* ----- form ----- */
+form {
+	margin: 1rem auto;
+}
+
+trix-toolbar {
+	display: none;
+}
+
+.board__form__nickname, 
+.board__form__username, 
+.board__form__password {
+	margin-bottom: 1rem;
+}
+
+.board__form__nickname > input, 
+.board__form__username > input, 
+.board__form__password > input {
+	border: none;
+	border-bottom: 1px solid #bbb;
+  margin: 0;
+  padding: 0.4em 0.6em;
+  font-size: 1rem;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.board__form__content {
+	margin: 1rem auto;
+}
+
+.submit__btn {
+	text-align: left;
+	font-size: 0;
+}
+
+/* ----- hr ----- */
+.hr {
+	height: 1px;
+	width: 100%;
+	background: black;
+	margin: 1rem auto;
+}
+
+/* ----- board posts ----- */
+.board__posts__card {
+	border-bottom: 1px solid #777;
+	box-sizing: border-box;
+	margin: 1rem 0;
+	word-break: break-all;
+	display: flex;
+}
+
+.card__avatar {
+	margin-right: 1rem;
+}
+
+.card__avatar > div {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #999;
+}
+
+.card__info {
+	margin-bottom: 1rem;
+}
+
+.card__info > * {
+	margin-bottom: 0.5rem;
+}
+
+.card__info__nickname {
+	color: #ED784A;
+	font-weight: 500;
+}
+
+.card__info__time {
+	font-size: 0.5rem;
+	color: #999;
+}
+
+
+
+
